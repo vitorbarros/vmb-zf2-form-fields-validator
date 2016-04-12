@@ -1,21 +1,16 @@
 <?php
 namespace VMBFormFieldsValidator\Form;
 
-use Zend\I18n\Translator\Translator;
 use Zend\InputFilter\InputFilter;
 
 class FormFieldsRequired extends InputFilter
 {
 
     private $fields = array();
-    private $locale;
-    private $translator;
 
-    public function __construct(array $fields, $locale)
+    public function __construct(array $fields)
     {
         $this->fields = $fields;
-        $this->locale = $locale;
-        $this->translator = new Translator();
         $this->fieldsRequired();
     }
 
@@ -35,7 +30,7 @@ class FormFieldsRequired extends InputFilter
                         array(
                             'name' => 'notEmpty',
                             'options' => array(
-                                'message' => $this->translator->translate("The field <b>{$label}</b> cannot be null", "default", $this->locale)
+                                'message' => "The field <b>{$label}</b> cannot be null"
                             )
                         )
                     )
