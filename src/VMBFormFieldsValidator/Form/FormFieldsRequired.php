@@ -39,8 +39,10 @@ class FormFieldsRequired extends InputFilter
                 $this->add($filter);
 
             }
+        }else{
+            throw new \Exception("index 'fieldsRequired' is missing");
         }
-        throw new \Exception("index 'fieldsRequired' is missing");
+
     }
 
 }
