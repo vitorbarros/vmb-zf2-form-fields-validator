@@ -1,0 +1,11 @@
+{
+    "name": "vitorbarros/vmb-zf2-form-fields-validator",
+    "description": "Package for validate zend form fields",
+    "authors": [
+        {
+            "name": "Vitor Barros",
+            "email": "vitormonteirodebarros@gmail.com"
+        }
+    ],
+    "require": {}
+}
