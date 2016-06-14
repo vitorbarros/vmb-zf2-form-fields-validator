@@ -21,6 +21,7 @@
         public function __construct($name = null, array $options = array())
         {
             $this->setInputFilter(new FormFilter(array(
+                //You fill this array with all required fields
                 'fieldsRequired' => array(
                     'client_name' => 'Nome',
                     'client_credit_aprovated_at' => 'Data de aprovação do crédito',
@@ -35,6 +36,7 @@
                     'client_activity' => 'Atividade',
                     'operator' => 'Operador responsável'
                 ),
+                //You only put this array if you need passeord validation
                 'passwordValidator' => array(
                     'password' => array(
                         'name' => 'user_password',
