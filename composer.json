@@ -7,5 +7,10 @@
             "email": "vitormonteirodebarros@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "VMBFormFieldsValidator\\":"src/"
+        }
+    }
 }
