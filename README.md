@@ -4,8 +4,8 @@
 `php composer.phar require vitorbarros/vmb-zf2-form-fields-validator`
 
 ## How to use
-`
-<?php
+
+`<?php
 namespace People\Form;
 
 use VMBFormFieldsValidator\Form\FormFilter;
@@ -48,5 +48,4 @@ class ClientForm extends Form
             )
         )));
     }
-}
-`
+}`
