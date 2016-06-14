@@ -5,9 +5,6 @@
 
 ## How to use
 
-`
-    <?php
-    
     namespace People\Form;
     
     use VMBFormFieldsValidator\Form\FormFilter;
@@ -51,6 +48,3 @@
             )));
         }
     }
-
-
-`
